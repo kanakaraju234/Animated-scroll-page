@@ -1,0 +1,108 @@
+<!Doctype html>
+<html>
+    <head>
+        <title>animation scroll bar</title>
+      
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    </head>
+    <body>
+        <div class="box color1" >
+            <div class="single-box " >
+                <div class="div-left" >
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                </div>
+                <div class="div-right" id="card1">
+                    <img src="http://via.placeholder.com/600x400" alt="">
+                </div>
+            </div>
+        </div>
+        
+        <div class="box color2" >
+            <div class="single-box">
+                <div class="div-left" id="card2">
+                   <img src="http://via.placeholder.com/600x400" alt="">
+                    
+                </div>
+                <div class="div-right">
+                   <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p> 
+                </div>
+            </div>
+        </div>
+         <div class="box color3" >
+            <div class="single-box">
+                <div class="div-left">
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                </div>
+                <div class="div-right" id="card3">
+                    <img src="http://via.placeholder.com/600x400" alt="">
+                </div>
+            </div>
+        </div>
+        
+        <div class="box color4">
+            <div class="single-box">
+                <div class="div-left animated flash" id="card4">
+                   <img src="http://via.placeholder.com/600x400" alt="">
+                    
+                </div>
+                <div class="div-right">
+                   <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p> 
+                </div>
+            </div>
+        </div>
+         <div class="box color5" >
+            <div class="single-box">
+                <div class="div-left">
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                </div>
+                <div class="div-right" id="card5">
+                    <img src="http://via.placeholder.com/600x400" alt="">
+                </div>
+            </div>
+        </div>
+        
+        <div class="box color6" >
+            <div class="single-box">
+                <div class="div-left shake" id="card6">
+                   <img src="http://via.placeholder.com/600x400" alt="">
+                    
+                </div>
+                <div class="div-right">
+                   <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p> 
+                </div>
+            </div>
+        </div>
+        <script src="js/jquery.js"></script>
+        
+        <script>
+        $(document).ready(function(){
+            $(window).scroll(function(){
+                var positionTop = $(document).scrollTop();
+                console.log(positionTop);
+                
+                if((positionTop>12) && (positionTop<130)){
+                    $("#card1").addClass("animated rollIn");
+                }
+                if((positionTop>280) && (positionTop<690)){
+                    $("#card2").addClass("animated fadeInDown");
+                }
+                if((positionTop>1138) && (positionTop<1654)){
+                    $("#card3").addClass("animated fadeInDown");
+                }
+                if((positionTop>2064) && (positionTop<2587)){
+                    $("#card4").addClass("animated fadeInDown");
+                }
+                if((positionTop>3103) && (positionTop<3619)){
+                    $("#card5").addClass("animated fadeInRight");
+                }
+                if((positionTop>4036) && (positionTop<4602)){
+                    $("#card6").addClass("animated fadeInLeft");
+                }
+            })
+        })
+        
+        </script>
+     
+    </body>
+</html>
